@@ -12,7 +12,7 @@ int longestConsecutive(vector<int> &nums)
         st.insert(nums[i]);
     }
     int long_len = 0;
-    // iterating through the unordered set
+    // finding the longest consecutive element
     for (auto x : st)
     {
         int len = 1;

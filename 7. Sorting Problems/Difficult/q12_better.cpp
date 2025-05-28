@@ -23,6 +23,12 @@ vector<int> findTwoElement(vector<int> &arr)
         {
             missing = i;
         }
+
+        // found both repeating and missing number
+        if (repeating != -1 && missing != -1)
+        {
+            break;
+        }
     }
     ans = {repeating, missing};
     return ans;

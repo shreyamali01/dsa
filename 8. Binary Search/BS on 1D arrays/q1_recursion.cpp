@@ -27,7 +27,8 @@ int search(vector<int> &nums, int target)
 {
     int l = 0;
     int r = nums.size() - 1;
-    int mid = (l + r) / 2;
+    // handling the overflow case
+    int mid = l + (r - l) / 2;
     int ans = recur_search(nums, l, r, target);
     return ans;
 }

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include <iostream>
 using namespace std;
-
+// doubly linked list
 class Node
 {
 public:
